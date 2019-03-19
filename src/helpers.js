@@ -56,6 +56,9 @@ const buildSheetFromMatrix = (data, options = {}) => {
   if (options['!merges']) {
     workSheet['!merges'] = options['!merges'];
   }
+  if (options['!protect']) {
+    workSheet['!protect'] = options['!protect'];
+  }
   return workSheet;
 };
 
